@@ -42,9 +42,11 @@
 
 ### Configure your development environment
 
-You should install Rust and Node.js, see [here](https://v2.tauri.app/start/prerequisites/) for more details.
+You should install Rust and Node.js first; see the [Tauri prerequisites guide](https://v2.tauri.app/start/prerequisites/) for details.
 
-Clash Nyanpasu uses the pnpm package manager. See [here](https://pnpm.io/installation) for installation instructions. Then, install Node.js packages.
+On Linux, Tauri/Wry still depends on WebKitGTK 4.1 rather than WebKitGTK 6. On Arch this usually means installing `webkit2gtk-4.1` even if your system already has `webkitgtk-6.0`.
+
+Clash Nyanpasu uses the pnpm package manager. See the [pnpm installation guide](https://pnpm.io/installation) for setup instructions. Then install the Node.js packages.
 
 ```shell
 pnpm i

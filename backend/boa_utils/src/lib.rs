@@ -1,7 +1,3 @@
-#![feature(trait_alias)]
-#![feature(auto_traits)]
-#![feature(negative_impls)]
-
 //! Boa's **boa_runtime** crate contains an example runtime and basic runtime features and
 //! functionality for the `boa_engine` crate for runtime implementors.
 //!

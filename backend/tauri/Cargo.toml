@@ -15,7 +15,7 @@ crate-type = ["staticlib", "cdylib", "rlib"]
 doctest = false
 
 [build-dependencies]
-tauri-build = { version = "2.1", features = [] }
+tauri-build = { version = "2.5.6", features = [] }
 serde = "1"
 serde_json = { version = "1.0", features = ["preserve_order"] }
 chrono = "0.4"
@@ -190,7 +190,7 @@ boa_utils = { path = "../boa_utils" }                     # should be removed wh
 boa_engine = { workspace = true, features = ["annex-b"] }
 
 # Tauri Dependencies
-tauri = { version = "2.4", features = [
+tauri = { version = "2.10", features = [
   "tray-icon",
   "image-png",
   "image-ico",
@@ -198,15 +198,15 @@ tauri = { version = "2.4", features = [
   "specta",
 ] }
 tauri-plugin-deep-link = { path = "../tauri-plugin-deep-link", version = "0.1.2" } # This should be migrated to official tauri plugin
-tauri-plugin-os = "2.2"
-tauri-plugin-clipboard-manager = "2.2"
-tauri-plugin-fs = "2.2"
-tauri-plugin-dialog = "2.2"
-tauri-plugin-process = "2.2"
-tauri-plugin-updater = "2.2"
-tauri-plugin-shell = "2.2"
-tauri-plugin-notification = "2.2"
-tauri-plugin-opener = "2.5"
+tauri-plugin-os = "2"
+tauri-plugin-clipboard-manager = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-process = "2"
+tauri-plugin-updater = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-opener = "2"
 window-vibrancy = { version = "0.7.0" }
 
 # Strong typed api binding between typescript and rust
@@ -223,7 +223,7 @@ specta = { version = "=2.0.0-rc.22", features = [
 ] }
 
 [target."cfg(not(any(target_os = \"android\", target_os = \"ios\")))".dependencies]
-tauri-plugin-global-shortcut = "2.2.0"
+tauri-plugin-global-shortcut = "2"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 objc2 = "0.6.1"

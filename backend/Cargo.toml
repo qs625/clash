@@ -5,6 +5,9 @@ members = ["tauri", "boa_utils", "nyanpasu-macro", "nyanpasu-egui"]
 [patch.crates-io]
 tray-icon = { git = "https://github.com/tauri-apps/tray-icon.git", rev = "34a3442" }
 
+[patch."https://github.com/libnyanpasu/include-compress-bytes"]
+include-compress-bytes = { path = "vendor/include-compress-bytes" }
+
 [workspace.package]
 repository = "https://github.com/keiko233/clash-nyanpasu.git"
 edition = "2024"

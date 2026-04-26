@@ -53,7 +53,9 @@ pub trait Logger {
     fn take(&mut self) -> Vec<Self::Item>;
 }
 
-pub trait LoggerBox = Logger<Item = LogMessage> + Sync + Send + 'static;
+pub trait LoggerBox: Logger<Item = LogMessage> + Sync + Send + 'static {}
+
+impl<T> LoggerBox for T where T: Logger<Item = LogMessage> + Sync + Send + 'static {}
 
 struct ConsoleLogger;
 
