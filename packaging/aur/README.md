@@ -4,4 +4,4 @@
 - `myclash/` is kept in sync with successful `v*` GitHub release builds.
 - New AUR updates should be based on `myclash/`.
 
-The old `clash-nyanpasu-qs-bin/` template has been removed.
+All older local AUR template copies have been removed.
