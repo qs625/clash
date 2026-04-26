@@ -7,8 +7,8 @@ Use these commands after the GitHub release already contains the `.deb` asset re
 Register on AUR, add your SSH public key, then clone the package repository:
 
 ```bash
-git clone ssh://aur@aur.archlinux.org/clash-nyanpasu-qs-bin.git
-cd clash-nyanpasu-qs-bin
+git clone ssh://aur@aur.archlinux.org/myclash.git
+cd myclash
 ```
 
 If the package does not exist yet, first create it from the AUR web UI with the exact package name.
@@ -17,8 +17,10 @@ If the package does not exist yet, first create it from the AUR web UI with the 
 
 Copy these files from the repo into the AUR clone:
 
-- `packaging/aur/clash-nyanpasu-qs-bin/PKGBUILD`
-- `packaging/aur/clash-nyanpasu-qs-bin/.SRCINFO`
+- `packaging/aur/myclash/PKGBUILD`
+- `packaging/aur/myclash/.SRCINFO`
+
+If the release was built from a `v*` tag after the sync workflow was added, these files on `main` should already match the GitHub release asset.
 
 ## 3. Validate Locally
 
