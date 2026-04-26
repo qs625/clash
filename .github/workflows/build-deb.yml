@@ -58,7 +58,7 @@ jobs:
         run: pnpm prepare:check
 
       - name: Build Tauri Debian bundle
-        run: pnpm build
+        run: pnpm tauri build --bundles deb --ci
 
       - name: Upload Debian artifact
         uses: actions/upload-artifact@v4
